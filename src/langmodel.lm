@@ -1,4 +1,4 @@
-Language model created by QuickLM on Thu Jun  7 20:05:18 EDT 2018
+Language model created by QuickLM on Sat Jun  9 00:51:09 EDT 2018
 Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
 
 The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
@@ -7,42 +7,74 @@ The code that was used to produce this language model is available in Open Sourc
 Please visit http://www.speech.cs.cmu.edu/tools/ for more information
 
 The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
-This model based on a corpus of 4 sentences and 7 words
+This model based on a corpus of 10 sentences and 14 words
 
 \data\
-ngram 1=7
-ngram 2=9
-ngram 3=9
+ngram 1=14
+ngram 2=22
+ngram 3=21
 
 \1-grams:
--0.9542 </s> -0.3010
--0.9542 <s> -0.2499
--1.2553 BROWSER -0.2499
--1.2553 CLOSE -0.2499
--1.2553 FILE -0.2762
--1.2553 MANAGER -0.2499
--1.2553 OPEN -0.2499
+-0.9445 </s> -0.3010
+-0.9445 <s> -0.2486
+-1.4674 CLOSE -0.2704
+-1.9445 END -0.2486
+-1.4674 GO -0.2860
+-1.6435 GOOGLE -0.2486
+-1.6435 MANAGER -0.2486
+-1.4674 OPEN -0.2704
+-1.9445 REDDIT -0.2486
+-1.6435 SPOTIFY -0.2486
+-1.6435 TASK -0.2910
+-1.4674 TO -0.2860
+-1.9445 TWITTER -0.2486
+-1.9445 YOUTUBE -0.2486
 
 \2-grams:
--0.6021 <s> CLOSE 0.0000
--0.6021 <s> OPEN 0.0000
--0.3010 BROWSER </s> -0.3010
--0.6021 CLOSE BROWSER 0.0000
--0.6021 CLOSE FILE 0.0000
--0.3010 FILE MANAGER 0.0000
+-0.8239 <s> CLOSE 0.0000
+-1.3010 <s> END 0.0000
+-0.8239 <s> GO 0.0000
+-0.8239 <s> OPEN 0.0000
+-0.7782 CLOSE GOOGLE 0.0000
+-0.7782 CLOSE SPOTIFY 0.0000
+-0.7782 CLOSE TASK 0.0000
+-0.3010 END </s> -0.3010
+-0.3010 GO TO 0.0000
+-0.3010 GOOGLE </s> -0.3010
 -0.3010 MANAGER </s> -0.3010
--0.6021 OPEN BROWSER 0.0000
--0.6021 OPEN FILE 0.0000
+-0.7782 OPEN GOOGLE 0.0000
+-0.7782 OPEN SPOTIFY 0.0000
+-0.7782 OPEN TASK 0.0000
+-0.3010 REDDIT </s> -0.3010
+-0.3010 SPOTIFY </s> -0.3010
+-0.3010 TASK MANAGER 0.0000
+-0.7782 TO REDDIT 0.0000
+-0.7782 TO TWITTER 0.0000
+-0.7782 TO YOUTUBE 0.0000
+-0.3010 TWITTER </s> -0.3010
+-0.3010 YOUTUBE </s> -0.3010
 
 \3-grams:
--0.6021 <s> CLOSE BROWSER
--0.6021 <s> CLOSE FILE
--0.6021 <s> OPEN BROWSER
--0.6021 <s> OPEN FILE
--0.3010 CLOSE BROWSER </s>
--0.3010 CLOSE FILE MANAGER
--0.3010 FILE MANAGER </s>
--0.3010 OPEN BROWSER </s>
--0.3010 OPEN FILE MANAGER
+-0.7782 <s> CLOSE GOOGLE
+-0.7782 <s> CLOSE SPOTIFY
+-0.7782 <s> CLOSE TASK
+-0.3010 <s> END </s>
+-0.3010 <s> GO TO
+-0.7782 <s> OPEN GOOGLE
+-0.7782 <s> OPEN SPOTIFY
+-0.7782 <s> OPEN TASK
+-0.3010 CLOSE GOOGLE </s>
+-0.3010 CLOSE SPOTIFY </s>
+-0.3010 CLOSE TASK MANAGER
+-0.7782 GO TO REDDIT
+-0.7782 GO TO TWITTER
+-0.7782 GO TO YOUTUBE
+-0.3010 OPEN GOOGLE </s>
+-0.3010 OPEN SPOTIFY </s>
+-0.3010 OPEN TASK MANAGER
+-0.3010 TASK MANAGER </s>
+-0.3010 TO REDDIT </s>
+-0.3010 TO TWITTER </s>
+-0.3010 TO YOUTUBE </s>
 
 \end\

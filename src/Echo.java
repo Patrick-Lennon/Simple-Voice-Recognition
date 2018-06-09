@@ -22,17 +22,37 @@ public class Echo {
 		
 		while ((result = rec.getResult()) != null) {
 			String cmd = result.getHypothesis();
-			String stuff = null;
+			String comp = null;
 			Process p;
-			if(cmd.equalsIgnoreCase("open file manager")) {
-                System.out.println("File Manager Opened!");
-            } else if (cmd.equalsIgnoreCase("close file manager")) {
-                System.out.println("File Manager Closed!");
-            } else if (cmd.equalsIgnoreCase("open browser")) {
-                System.out.println("Browser Opened!");
-            } else if (cmd.equalsIgnoreCase("close browser")) {
-                System.out.println("Browser Closed!");
+			if (cmd.equalsIgnoreCase("close google")) {
+                System.out.println("Google Closed!");
+                comp = "taskkill /F /IM chrome.exe";
+            } else if(cmd.equalsIgnoreCase("open google")) {
+            	 System.out.println("Opening google");
+            	comp = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe";
+            } else if(cmd.equalsIgnoreCase("open spotify")) {
+           	 	System.out.println("Opening Spotify");
+           	 	comp = "C:\\Users\\Me\\AppData\\Roaming\\Spotify\\Spotify.exe";
+            } else if(cmd.equalsIgnoreCase("close spotify")) {
+           	 	System.out.println("Closing Spotify");
+           	 	comp = "taskkill /F /IM Spotify.exe";
+            } else if(cmd.equalsIgnoreCase("Go to twitter")) {
+           	 	System.out.println("Going to Twitter");
+           	 	comp = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe twitter.com";
+            } else if(cmd.equalsIgnoreCase("Go to reddit")) {
+           	 	System.out.println("Going to Reddit");
+           	 	comp = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe reddit.com";
+            } else if(cmd.equalsIgnoreCase("Go to youtube")) {
+           	 	System.out.println("Going to YouTube");
+           	 	comp = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe youtube.com";
+            } else if(cmd.equalsIgnoreCase("end")) {
+            	System.out.println("Ending Program");
+            	break;
             }
+			
+			if(comp != null) {
+				p = Runtime.getRuntime().exec(comp);
+			}
 		}
 	}
 

@@ -1,4 +1,10 @@
-open file manager
-close file manager
-open browser
-close browser
+open task manager
+close task manager
+open google
+close google
+open spotify
+close spotify
+end
+go to twitter
+go to reddit
+go to youtube
