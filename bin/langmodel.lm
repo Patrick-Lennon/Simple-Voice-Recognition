@@ -1,0 +1,60 @@
+Language model created by QuickLM on Sat Jun  9 00:37:09 EDT 2018
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 7 sentences and 9 words
+
+\data\
+ngram 1=9
+ngram 2=14
+ngram 3=14
+
+\1-grams:
+-0.9183 </s> -0.3010
+-0.9183 <s> -0.2452
+-1.2863 CLOSE -0.2536
+-1.7634 END -0.2452
+-1.4624 GOOGLE -0.2452
+-1.4624 MANAGER -0.2452
+-1.2863 OPEN -0.2536
+-1.4624 SPOTIFY -0.2452
+-1.4624 TASK -0.2858
+
+\2-grams:
+-0.6690 <s> CLOSE 0.0000
+-1.1461 <s> END 0.0000
+-0.6690 <s> OPEN 0.0000
+-0.7782 CLOSE GOOGLE 0.0000
+-0.7782 CLOSE SPOTIFY 0.0000
+-0.7782 CLOSE TASK 0.0000
+-0.3010 END </s> -0.3010
+-0.3010 GOOGLE </s> -0.3010
+-0.3010 MANAGER </s> -0.3010
+-0.7782 OPEN GOOGLE 0.0000
+-0.7782 OPEN SPOTIFY 0.0000
+-0.7782 OPEN TASK 0.0000
+-0.3010 SPOTIFY </s> -0.3010
+-0.3010 TASK MANAGER 0.0000
+
+\3-grams:
+-0.7782 <s> CLOSE GOOGLE
+-0.7782 <s> CLOSE SPOTIFY
+-0.7782 <s> CLOSE TASK
+-0.3010 <s> END </s>
+-0.7782 <s> OPEN GOOGLE
+-0.7782 <s> OPEN SPOTIFY
+-0.7782 <s> OPEN TASK
+-0.3010 CLOSE GOOGLE </s>
+-0.3010 CLOSE SPOTIFY </s>
+-0.3010 CLOSE TASK MANAGER
+-0.3010 OPEN GOOGLE </s>
+-0.3010 OPEN SPOTIFY </s>
+-0.3010 OPEN TASK MANAGER
+-0.3010 TASK MANAGER </s>
+
+\end\
